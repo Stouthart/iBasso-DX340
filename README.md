@@ -18,7 +18,7 @@ curl -fs https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/mai
 
 Your device will automatically reboot.
 
-Note: adb remount may take 15-30 secs on first run, you can safely ignore any output.
+<i>Note: adb remount may take 15-30 secs on first run, you can safely ignore any output.</i>
 
 Undoing is just as easy:
 <pre>
