@@ -1,4 +1,5 @@
 #!/bin/sh
+
 # v1.0, Copyright (c) 2017, Stouthart. All rights reserved.
 
 # Check preconditions
@@ -36,9 +37,9 @@ on late-fs
 on property:sys.boot_completed=1
   # Runtime SchedTune
   write /dev/stune/schedtune.boost 10
-  write /dev/stune/foreground/schedtune.boost 20
+  write /dev/stune/foreground/schedtune.boost 15
   write /dev/stune/foreground/schedtune.prefer_idle 1
-  write /dev/stune/top-app/schedtune.boost 30
+  write /dev/stune/top-app/schedtune.boost 25
   write /dev/stune/top-app/schedtune.prefer_idle 1
 
   # Fork and execute /etc/rc.local
