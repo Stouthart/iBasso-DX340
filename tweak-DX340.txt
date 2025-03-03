@@ -7,7 +7,7 @@ err_msg () { printf '\e[31mError: %s\e[m\n' "$1"; }
 
 PS3='Select tuning: '
 select o in 'Default' 'Max (by Whitigir)'; do
-  if [[ -z $i ]]; then err_msg 'Invalid option'; else break; fi
+  if [[ -z $o ]]; then err_msg 'Invalid option'; else break; fi
 done
 
 echo $o
