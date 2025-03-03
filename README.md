@@ -5,7 +5,7 @@
 
 Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. Make sure your device has WiFi turned on and enable USB debugging.
 
-Run the following commands from a Command prompt, or Terminal window on Mac:
+Run the following lines from a Command prompt, or Terminal window on Mac:
 <pre>
 adb root
 adb remount
