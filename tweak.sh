@@ -56,7 +56,7 @@ sleep 10
 # Runtime TuneD
 echo 10 >/proc/sys/vm/swappiness
 
-# Move android.hardware.audio.servic to top-app cpu-set
+# Move android.hardware.audio.service to top-app's
 echo "\$(pidof android.hardware.audio.service)" >/dev/stune/top-app/tasks
 
 ## https://github.com/LeanxModulostk/IRQ-Balancer-Configuration/blob/main/service.sh
