@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# v1.0, Copyright (c) 2017, Stouthart. All rights reserved.
+# v1.0, Copyright (c) 2025, Stouthart. All rights reserved.
 
 # Check preconditions
 failed() { printf '\e[31mFailed: %s\e[m\n' "$1"; exit 1; }
