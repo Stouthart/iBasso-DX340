@@ -56,11 +56,14 @@ sleep 10
 # Runtime TuneD
 echo 10 >/proc/sys/vm/swappiness
 
-## https://xdaforums.com/t/how-to-set-permanent-background-process-limit.1869712#post-89958060
-service call activity 44 i32 4 >/dev/null
+# Move android.hardware.audio.servic to top-app cpu-set
+echo "$(pidof android.hardware.audio.service)" >/dev/stune/top-app/tasks
 
 ## https://github.com/LeanxModulostk/IRQ-Balancer-Configuration/blob/main/service.sh
 renice -n -10 -p "\$(pidof msm_irqbalance)"
+
+## https://xdaforums.com/t/how-to-set-permanent-background-process-limit.1869712#post-89958060
+service call activity 44 i32 4 >/dev/null
 
 # Disable IPv6
 echo 1 >/proc/sys/net/ipv6/conf/all/disable_ipv6
