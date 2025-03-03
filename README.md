@@ -2,7 +2,6 @@
 
 Work in progres...
 
-
 Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. Make sure WiFi is turned on and enable USB debugging on your device.
 
 From a Command prompt, or Terminal window on Mac, run the following commands:
@@ -20,7 +19,7 @@ Your device will reboot automatically.
 
 Note: adb remount may take 15-30 secs on 1st run, you can safely ignore any output.
 
-Undo is equally simple:
+Undoing is just as easy:
 <pre>
 adb root
 adb remount
