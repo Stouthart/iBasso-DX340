@@ -27,3 +27,5 @@ adb shell unlink /etc/init/custom.rc
 adb shell unlink /etc/rc.local
 adb reboot
 <pre>
+
+Enjoy the improvements!
