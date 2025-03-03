@@ -78,5 +78,6 @@ chmod +x /etc/rc.local
 
 echo 'Rebooting...'
 reboot
+exit 0
 
 ### END SCRIPT ###
