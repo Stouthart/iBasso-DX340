@@ -2,8 +2,8 @@
 
 # Check preconditions
 err_msg() { printf '\e[31mError: %s\e[m\n' "$1"; }
-[ "$(whoami)" != root ] && err_msg 'user not root' && exit 1
-! touch /etc/init/custom.rc 2>/dev/null && err_msg 'filesystem not rw' && exit 1
+[ "$(whoami)" != root ] && err_msg 'root privileges required, did you run adb root?' && exit 1
+! touch /etc/init/custom.rc 2>/dev/null && err_msg 'filesystem not rw, did you run adb remount?' && exit 1
 
 echo 'Running...'
 
