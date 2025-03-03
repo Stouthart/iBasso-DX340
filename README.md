@@ -1,10 +1,22 @@
 Work in progres...
 
-Make sure WiFi is on and enable USB debugging (Settings > System > Developer options).
-<br />Run the following commands:
+Download & install SDK Platform tools/ADB. Make sure WiFi is on and enable USB debugging (Settings > System > Developer options).
+
+To apply tweaks, run the following commands:
 <pre>
 adb root
 adb remount
 adb shell
 curl https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/main/tweak.sh | /bin/sh 
 </pre>
+
+Your device will reboot automatically. Note: adb remount may take 15-30 secs on 1st run, you can safely ignore any output.
+
+Undo is equally simple:
+<pre>
+adb root
+adb remount
+adb shell unlink /etc/init/custom.rc
+adb shell unlink /etc/rc.local
+adb reboot
+<pre>
