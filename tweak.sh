@@ -62,10 +62,7 @@ echo 10 >/proc/sys/vm/swappiness
 renice -n -10 -p "\$(pidof msm_irqbalance)"
 
 # Move android.hardware.audio.service to top-app's
-echo "\$(pidof android.hardware.audio.service)" >/dev/stune/top-app/tasks
-
-## https://xdaforums.com/t/how-to-set-permanent-background-process-limit.1869712#post-89958060
-service call activity 44 i32 4 >/dev/null
+pidof android.hardware.audio.service >/dev/stune/top-app/tasks
 
 # Disable IPv6
 echo 1 >/proc/sys/net/ipv6/conf/all/disable_ipv6
