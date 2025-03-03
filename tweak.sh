@@ -42,7 +42,7 @@ on property:sys.boot_completed=1
   write /dev/stune/top-app/schedtune.boost 25
   write /dev/stune/top-app/schedtune.prefer_idle 1
 
-  # Fork and execute /etc/rc.local
+  # Fork & execute /etc/rc.local
   exec_background -- /etc/rc.local
 EOF
 
