@@ -1,4 +1,4 @@
-<h3>iBasso DX340 Performance Tweaks</h3>
+<h3>iBasso DX340 Performance Tweaks (no rooting required)</h3>
 
 <i>Work in progres...</i>
 
