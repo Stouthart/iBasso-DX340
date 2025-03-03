@@ -13,7 +13,7 @@ adb shell
 </pre>
 From the DX340 prompt, run:
 <pre>
-curl -fs https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/main/tweak.sh | /bin/sh 
+curl -fs https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/main/tweak.sh | $SHELL 
 </pre>
 
 Your device will automatically reboot.
