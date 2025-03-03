@@ -1,6 +1,6 @@
 <h3>iBasso DX340 Performance Tweaks</h3>
 
-Work in progres...
+<i>Work in progres...</i>
 
 Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. Make sure WiFi is turned on and enable USB debugging on your device.
 
