@@ -2,7 +2,7 @@
 
 <i>Work in progres...</i>
 
-Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. Make sure WiFi is turned on and enable USB debugging on your device.
+Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. On your device, make sure WiFi is turned on and enable USB debugging.
 
 From a Command prompt, or Terminal window on Mac, run the following commands:
 <pre>
