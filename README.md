@@ -2,11 +2,14 @@ Work in progres...
 
 Download & install SDK Platform tools/ADB. Make sure WiFi is on and enable USB debugging (Settings > System > Developer options).
 
-To apply tweaks, run the following commands:
+From a Command/PowerShell prompt, or Terminal window on Mac run the following commands:
 <pre>
 adb root
 adb remount
 adb shell
+</pre>
+From the DX340 shell prompt, run:
+<pre>
 curl https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/main/tweak.sh | /bin/sh 
 </pre>
 
