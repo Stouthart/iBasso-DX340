@@ -2,12 +2,11 @@
 
 # Version 4.2
 
-print_col () { printf '\e[31m%s\e[m\n' "$1"; }
-
 
 # Check preconditions
-[ "$(whoami)" != root ] && print_col 'Error: user not root' && exit
-! touch /etc/init/custom.rc 2>/dev/null && print_col 'Error: filesystem not rw' && exit
+error_msg () { printf '\e[31mError: %s\e[m\n' "$1"; }
+[ "$(whoami)" != root ] && error_msg 'user not root' && exit
+! touch /etc/init/custom.rc 2>/dev/null && error_msg 'filesystem not rw' && exit
 
 
 ## https://android.stackexchange.com/questions/217495/how-can-proc-sys-values-be-changed-at-boot-sysctl-conf-does-this-on-normal-lin
@@ -77,7 +76,7 @@ EOF
 chmod +x /etc/rc.local
 
 
-print_col 'Rebooting...'
+echo 'Rebooting...'
 reboot
 
 ### END SCRIPT ###
