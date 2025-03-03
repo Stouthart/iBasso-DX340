@@ -61,7 +61,7 @@ echo 10 >/proc/sys/vm/swappiness
 ## https://github.com/LeanxModulostk/IRQ-Balancer-Configuration/blob/main/service.sh
 renice -n -10 -p "\$(pidof msm_irqbalance)"
 
-# Move android.hardware.audio.service to top-app's
+# Move android.hardware.audio.service to top-app cpuset
 pidof android.hardware.audio.service >/dev/stune/top-app/tasks
 
 # Disable IPv6
