@@ -20,7 +20,7 @@ Your device will automatically reboot.
 
 <i>Note: adb remount may take 15-30 secs on first run, you can safely ignore any output.</i>
 
-Undoing is just as easy:
+Undo is just as easy:
 <pre>
 adb root
 adb remount
