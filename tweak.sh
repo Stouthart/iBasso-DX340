@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # Check preconditions
-err_msg() { printf '\e[31mError: %s\e[m\n' "$1"; }
-[ "$(whoami)" != root ] && err_msg 'Root privileges required. Did you run adb root?' && exit 1
-! touch /etc/init/custom.rc 2>/dev/null && err_msg 'Read-only file system. Did you run adb remount?' && exit 1
+err_msg() { printf '\e[31mError: %s\e[m\n' "$1"; exit 1; }
+[ "$(whoami)" != root ] && err_msg 'Root privileges required. Did you run adb root?'
+! touch /etc/init/custom.rc 2>/dev/null && err_msg 'Read-only file system. Did you run adb remount?'
 
 echo 'Running...'
 
