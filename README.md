@@ -24,8 +24,7 @@ Undoing is just as easy:
 <pre>
 adb root
 adb remount
-adb shell unlink /etc/init/custom.rc
-adb shell unlink /etc/rc.local
+adb shell rm /etc/init/custom.rc /etc/rc.local
 adb reboot
 </pre>
 
