@@ -15,7 +15,9 @@ From the DX340 prompt, run:
 curl https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/main/tweak.sh | /bin/sh 
 </pre>
 
-Your device will reboot automatically. Note: adb remount may take 15-30 secs on 1st run, you can safely ignore any output.
+Your device will reboot automatically.
+
+Note: adb remount may take 15-30 secs on 1st run, you can safely ignore any output.
 
 Undo is equally simple:
 <pre>
