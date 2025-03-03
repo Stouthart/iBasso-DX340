@@ -5,13 +5,6 @@ err_msg () { printf '\e[31mError: %s\e[m\n' "$1"; }
 [ "$(whoami)" != root ] && err_msg 'user not root' && exit 1
 ! touch /etc/init/custom.rc 2>/dev/null && err_msg 'filesystem not rw' && exit 1
 
-PS3='Select tuning: '
-select o in 'Default' 'Max (by Whitigir)'; do
-  if [[ -z $o ]]; then err_msg 'Invalid option'; else break; fi
-done
-
-echo $o
-exit 1
 
 ## https://android.stackexchange.com/questions/217495/how-can-proc-sys-values-be-changed-at-boot-sysctl-conf-does-this-on-normal-lin
 ## https://android.googlesource.com/platform/system/core/+/master/init/README.md
