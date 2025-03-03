@@ -1,7 +1,4 @@
-### BEGIN SCRIPT ###
-
-# Version 4.2
-
+#!/bin/sh
 
 # Check preconditions
 err_msg () { printf '\e[31mError: %s\e[m\n' "$1"; }
@@ -79,5 +76,3 @@ chmod +x /etc/rc.local
 echo 'Rebooting...'
 reboot
 exit 0
-
-### END SCRIPT ###
