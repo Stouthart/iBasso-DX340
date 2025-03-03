@@ -1,6 +1,5 @@
-<img src="https://ibasso.com/wp-content/uploads/2024/12/2024-12-24469.webp" />
-
 <h3>iBasso DX340 Performance Tweaks (no rooting required)</h3>
+<img src="https://ibasso.com/wp-content/uploads/2024/12/2024-12-24469.webp" />
 
 <i>Work in progres...</i>
 
