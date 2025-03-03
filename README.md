@@ -1,6 +1,6 @@
 Work in progres...
 
-Download & install SDK Platform tools/ADB. Make sure WiFi is on and enable USB debugging (Settings > System > Developer options).
+Download & install <a href="https://developer.android.com/tools/releases/platform-tools">SDK Platform tools/ADB</a>. Make sure WiFi is turned on and enable USB debugging (Settings > System > Developer options).
 
 From a Command/PowerShell prompt, or Terminal window on Mac run the following commands:
 <pre>
