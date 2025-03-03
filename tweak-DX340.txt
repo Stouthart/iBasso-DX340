@@ -1,4 +1,4 @@
-### BEGIN COPY ###
+### BEGIN FILE ###
 
 # Version 4.2
 
@@ -77,4 +77,4 @@ chmod +x /etc/rc.local
 
 reboot
 
-### END COPY ###
+### END FILE ###
