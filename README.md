@@ -3,9 +3,9 @@
 
 <i>Work in progres...</i>
 
-Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. On your device, make sure WiFi is turned on and enable USB debugging.
+Download and install <a href="https://developer.android.com/tools/releases/platform-tools" target="_blank">SDK Platform tools</a>. Make sure your device has WiFi turned on and enable USB debugging.
 
-From a Command prompt, or Terminal window on Mac, run the following commands:
+Run the following commands from a Command prompt, or Terminal window on Mac::
 <pre>
 adb root
 adb remount
@@ -16,9 +16,9 @@ From the DX340 prompt, run:
 curl -fs https://raw.githubusercontent.com/Stouthart/iBasso-DX340/refs/heads/main/tweak.sh | /bin/sh 
 </pre>
 
-Your device will reboot automatically.
+Your device will automatically reboot.
 
-Note: adb remount may take 15-30 secs on 1st run, you can safely ignore any output.
+Note: adb remount may take 15-30 secs on first run, you can safely ignore any output.
 
 Undoing is just as easy:
 <pre>
