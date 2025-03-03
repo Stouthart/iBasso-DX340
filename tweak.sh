@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Check preconditions
-err_msg() { printf '\e[31m[ERROR] %s\e[m\n' "$1"; }
+err_msg() { printf '\e[31mError: %s\e[m\n' "$1"; }
 [ "$(whoami)" != root ] && err_msg 'user not root' && exit 1
 ! touch /etc/init/custom.rc 2>/dev/null && err_msg 'filesystem not rw' && exit 1
 
