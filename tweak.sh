@@ -26,7 +26,7 @@ on init
   write /proc/sys/vm/stat_interval 10
 
 on late-init
-  # Disable scheduler statistics to reduce overhead (enabled in /etc/init/atrace.rc) 
+  # Disable scheduler statistics to reduce overhead (set in /etc/init/atrace.rc) 
   write /proc/sys/kernel/sched_schedstats 0
 
 on late-fs
